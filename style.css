@@ -1,0 +1,50 @@
+body {
+  color: black;
+  font-family: 'Space Mono', monospace;
+
+  font-size:26px;
+}
+.output {
+display:none;
+}
+.active:after {
+  content: '_';
+}
+
+.heading {
+  font-size: 6em;
+}
+
+.tagline{
+  font-size: 2.5em;
+}
+main {
+  margin: 10%;
+}
+
+.description {
+  opacity: 0;
+  font-size: 2.5em;
+  transition: all 2s ease-in 1s;
+}
+
+.showy {
+  opacity: 1;
+  transition: all 2s ease-in 1s;
+}
+
+
+
+@media (max-width: 600px) {
+  .heading {
+    font-size: 4em;
+  }
+
+  .tagline{
+    font-size: 1.5em;
+  }
+
+  .description {
+    font-size: 1.5em;
+  }
+}
