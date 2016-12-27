@@ -29,11 +29,96 @@ main {
 }
 
 .showy {
-  opacity: 1;
+  opacity: 1 !important;
   transition: all 2s ease-in 1s;
 }
 
+.class-list {
+  opacity: 0;
+}
 
+.class-list .col-sm-4 {
+  height: 30vh;
+}
+
+.class-list p {
+  height: 90%;
+  padding: 10;
+  font-size: 2.6em;
+  color: white;
+}
+
+
+.green {
+  background: #1A5E63;
+  transition: all 0.3s ease-in;
+}
+.turquoise {
+  background: #028090;
+  transition: all 0.3s ease-in;
+}
+
+.green:hover {
+  background: #D6B83D;
+}
+.turquoise:hover {
+  background: #D6B83D;
+}
+
+.close {
+  color: #028090;
+}
+
+/*modal*/
+.modal-container_g {
+  position: fixed;
+  background-color: white;
+  width: 70%;
+  left: 50%;
+  padding: 20px;
+  z-index: 2;
+  transform: translate(-50%, -200%);
+  transition: transform 300ms ease-in-out;
+}
+
+.modal_g:before {
+  content: "";
+  position: fixed;
+  display: none;
+  background-color:rgba(0,0,0, 0.3);
+  top: 0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.address {
+  text-align: center;
+}
+.displayer:before{
+  display:block;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.displayer .modal-container_g {
+  transform: translate(-50%, 0%);
+}
+
+/*modal end*/
+
+@media (min-width: 600px) {
+  body{
+    padding: 5%;
+  }
+
+  .class-list {
+    padding-top: 5%;
+  }
+}
 
 @media (max-width: 600px) {
   .heading {
