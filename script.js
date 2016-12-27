@@ -50,8 +50,53 @@ terminal();
 
 setTimeout(function(){
   document.getElementsByClassName('description')[0].classList.add("showy")
-}, 750)
+}, 750);
 
 setTimeout(function(){
   document.getElementsByClassName('class-list')[0].classList.add("showy")
-}, 1300)
+}, 1300);
+
+
+
+// modal one
+document.getElementsByClassName('trigger_1')[0].addEventListener("click", function(){
+  document.getElementsByClassName('modal_1')[0].classList.add("displayer")
+  document.getElementsByTagName('body')[0].classList.add('overflow-hidden')
+});
+
+document.getElementsByClassName('close_1')[0].addEventListener('click', function(){
+  document.getElementsByClassName('modal_1')[0].classList.remove("displayer");
+});
+
+//modal two
+document.getElementsByClassName('trigger_2')[0].addEventListener("click", function(){
+  document.getElementsByClassName('modal_2')[0].classList.add("displayer")
+  document.getElementsByTagName('body')[0].classList.add('overflow-hidden')
+});
+
+document.getElementsByClassName('close_2')[0].addEventListener('click', function(){
+  document.getElementsByClassName('modal_2')[0].classList.remove("displayer");
+});
+
+//modal three
+document.getElementsByClassName('trigger_3')[0].addEventListener("click", function(){
+  document.getElementsByClassName('modal_3')[0].classList.add("displayer")
+  document.getElementsByTagName('body')[0].classList.add('overflow-hidden')
+});
+
+document.getElementsByClassName('close_3')[0].addEventListener('click', function(){
+  document.getElementsByClassName('modal_3')[0].classList.remove("displayer");
+});
+
+//escape key
+document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    if (evt.keyCode == 27) {
+      var modals = document.getElementsByClassName('modal_g')
+
+      for(var i = 0; i < modals.length; i++){
+        modals[i].classList.remove("displayer");
+
+      }
+    }
+};
