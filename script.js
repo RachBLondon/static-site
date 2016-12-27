@@ -45,9 +45,7 @@ var terminal = function() {
 
 terminal();
 
-
-
-
+//show content
 setTimeout(function(){
   document.getElementsByClassName('description')[0].classList.add("showy")
 }, 750);
@@ -56,37 +54,23 @@ setTimeout(function(){
   document.getElementsByClassName('class-list')[0].classList.add("showy")
 }, 1300);
 
+var applyModalEffect= function(number){
+  var trigger = 'trigger_' + number;
+  var modal = 'modal_' + number;
+  var close = 'close_' + number;
+  document.getElementsByClassName(trigger)[0].addEventListener("click", function(){
+    document.getElementsByClassName(modal)[0].classList.add("displayer")
+    document.getElementsByTagName('body')[0].classList.add('overflow-hidden')
+  });
 
+  document.getElementsByClassName(close)[0].addEventListener('click', function(){
+    document.getElementsByClassName(modal)[0].classList.remove("displayer");
+  });
+}
 
-// modal one
-document.getElementsByClassName('trigger_1')[0].addEventListener("click", function(){
-  document.getElementsByClassName('modal_1')[0].classList.add("displayer")
-  document.getElementsByTagName('body')[0].classList.add('overflow-hidden')
-});
-
-document.getElementsByClassName('close_1')[0].addEventListener('click', function(){
-  document.getElementsByClassName('modal_1')[0].classList.remove("displayer");
-});
-
-//modal two
-document.getElementsByClassName('trigger_2')[0].addEventListener("click", function(){
-  document.getElementsByClassName('modal_2')[0].classList.add("displayer")
-  document.getElementsByTagName('body')[0].classList.add('overflow-hidden')
-});
-
-document.getElementsByClassName('close_2')[0].addEventListener('click', function(){
-  document.getElementsByClassName('modal_2')[0].classList.remove("displayer");
-});
-
-//modal three
-document.getElementsByClassName('trigger_3')[0].addEventListener("click", function(){
-  document.getElementsByClassName('modal_3')[0].classList.add("displayer")
-  document.getElementsByTagName('body')[0].classList.add('overflow-hidden')
-});
-
-document.getElementsByClassName('close_3')[0].addEventListener('click', function(){
-  document.getElementsByClassName('modal_3')[0].classList.remove("displayer");
-});
+applyModalEffect(1);
+applyModalEffect(2);
+applyModalEffect(3);
 
 //escape key
 document.onkeydown = function(evt) {
