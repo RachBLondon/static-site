@@ -50,4 +50,8 @@ terminal();
 
 setTimeout(function(){
   document.getElementsByClassName('description')[0].classList.add("showy")
-}, 1000)
+}, 750)
+
+setTimeout(function(){
+  document.getElementsByClassName('class-list')[0].classList.add("showy")
+}, 1300)
