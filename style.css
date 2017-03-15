@@ -43,6 +43,7 @@ main {
     padding: 3px;
     border: none;
 }
+
 .showy {
   opacity: 1 !important;
   transition: all 2s ease-in 1s;
@@ -59,7 +60,7 @@ main {
 .class-list p {
   height: 90%;
   padding: 10;
-  font-size: 2.6em;
+  font-size: 2em;
   color: white;
 }
 
