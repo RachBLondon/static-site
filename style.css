@@ -4,6 +4,14 @@ body {
 
   font-size:26px;
 }
+.wc-social-media {
+  text-align: right;
+  font-size: 2em;
+  opacity: 0;
+}
+.wc-social-media a {
+  color: black;
+}
 .output {
 display:none;
 }
