@@ -49,6 +49,7 @@ terminal();
 setTimeout(function(){
   document.getElementsByClassName('description')[0].classList.add("showy")
   document.getElementsByClassName('wc-social-media')[0].classList.add("showy")
+  document.getElementsByClassName('mailing-list')[0].classList.add("showy")
 }, 750);
 
 setTimeout(function(){

@@ -93,7 +93,16 @@ main {
   color: #028090;
   float: right;
 }
+.mailing-list {
+  text-align: center;
+  opacity: 0;
+}
 
+.mailing-list .form-btn {
+  background-color: #1A5E63;
+  border: none;
+  color: white;
+}
 /*modal*/
 .modal-container_g {
   position: fixed;
